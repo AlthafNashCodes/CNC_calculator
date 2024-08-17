@@ -118,3 +118,22 @@ document.getElementById("Thick-dr-c1").addEventListener("click", function() {
     }
 });
 
+document.getElementById("weight-btn").addEventListener("click", function() {
+    let weight = parseFloat(document.getElementById("weight-input").value);
+    let cost_per_pounds = weight * 0.59;
+    document.getElementById("Weight").innerHTML = cost_per_pounds.toFixed(2);
+});
+
+document.getElementById("materials-btn").addEventListener("click", function () {
+    const input1 = parseFloat(document.getElementById("materials-input1").value) || 0;
+    const input2 = parseFloat(document.getElementById("materials-input2").value) || 0;
+    const input3 = parseFloat(document.getElementById("materials-input3").value) || 0;
+    const input4 = parseFloat(document.getElementById("materials-input4").value) || 0;
+
+    let total = input1 + input2 + input3 + input4;
+
+    document.getElementById("metrial_label").innerHTML = total;
+});
+
+
+

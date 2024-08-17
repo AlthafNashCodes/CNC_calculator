@@ -7,6 +7,7 @@
 </head>
 <body>
     <section id="main">
+        <hr>
         <div class="Model-dropdown">
             <button class="btn-model" name="btn">Model</button>
             <div class="Model-dropdown-content">
@@ -29,15 +30,63 @@
             </div>
             <h1 class="number" id="h1">Model number 3</h1>
         </div>
+        <hr>
         <div class="added-materials">
-            <div class="Model-dropdown">
+            <hr>
+            <div class="Model-dropdown2">
                 <button class="btn-model" name="btn">Thickness</button>
-                <div class="Model-dropdown-content">
+                <div class="Model-dropdown-content2">
                     <button id="Thick-dr-c1">0.3</button>
                 </div>
                 <h1 class="number-Thick" id="h1">Model number 3</h1>
             </div>
+            <hr>
+            <div class="added-materials-div"> 
+                <input type="number" name="Weight" id="weight-input">
+                <label for="Weight">Weight</label>
+                <button class="btn-model" name="btn" id="weight-btn">Enter</button>
+                <h1 class="number-Thick" id="Weight">Thickness</h1>
+            </div>
+            <hr>
+            <div class="added-materials-div">
+                <input type="number" name="Added materials" id="materials-input1">
+                <input type="number" name="Added materials" id="materials-input2">
+                <input type="number" name="Added materials" id="materials-input3">
+                <input type="number" name="Added materials" id="materials-input4">
+                <label for="Added materials" id="metrial_label">Total Added materials</label>
+                <button class="btn-model" name="btn" id="materials-btn">Enter</button>
+            </div>
+            <hr>
         </div>  
+        <hr>
+         <div class="added-materials">
+            <hr>
+            <div class="Model-dropdown2">
+                <button class="btn-model" name="btn">Thickness</button>
+                <div class="Model-dropdown-content2">
+                    <button id="Thick-dr-c1">0.3</button>
+                </div>
+                <h1 class="number-Thick" id="h1">Model number 3</h1>
+            </div>
+            <hr>
+            <div class="added-materials-div"> 
+                <input type="number" name="Weight" id="weight-input">
+                <label for="Weight">Weight</label>
+                <button class="btn-model" name="btn" id="weight-btn">Enter</button>
+                <h1 class="number-Thick" id="Weight">Thickness</h1>
+            </div>
+            <hr>
+            <div class="added-materials-div">
+                <input type="number" name="Added materials" id="materials-input1">
+                <input type="number" name="Added materials" id="materials-input2">
+                <input type="number" name="Added materials" id="materials-input3">
+                <input type="number" name="Added materials" id="materials-input4">
+                <label for="Added materials" id="metrial_label">Total Added materials</label>
+                <button class="btn-model" name="btn" id="materials-btn">Enter</button>
+            </div>
+            <hr>
+        </div>  
+        <hr>
     </section>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
