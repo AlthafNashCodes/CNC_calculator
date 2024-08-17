@@ -145,6 +145,14 @@ document.getElementById("r-materials-btn").addEventListener("click", function ()
 
     document.getElementById("r-metrial_label").innerHTML = total;
 });
+document.getElementById("Add-labour-btn").addEventListener("click", function () {
+    const Labourin = parseFloat(document.getElementById("Labouinput4").value) || 0;
+    document.getElementById("lab-metrial_label").innerHTML = Labourin;
+});
 
+document.getElementById("Reduce-labour-btn").addEventListener("click", function () {
+    const Labourin2 = parseFloat(document.getElementById("Labour-input4").value) || 0;
+    document.getElementById("reduce-lab-metrial_label").innerHTML = Labourin2;
+});
 
 
