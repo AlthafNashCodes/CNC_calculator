@@ -144,3 +144,24 @@ label{
     padding:10px;
 }
 
+
+.Reduced-materials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.Reduced-materials .Reduced-materials-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 50px;
+    padding-top: 50px;
+}
+
+label{
+    font-size: 23px;
+    font-weight: 700;
+    padding:10px;
+}

@@ -135,5 +135,16 @@ document.getElementById("materials-btn").addEventListener("click", function () {
     document.getElementById("metrial_label").innerHTML = total;
 });
 
+document.getElementById("r-materials-btn").addEventListener("click", function () {
+    const input1 = parseFloat(document.getElementById("r-materials-input1").value) || 0;
+    const input2 = parseFloat(document.getElementById("r-materials-input2").value) || 0;
+    const input3 = parseFloat(document.getElementById("r-materials-input3").value) || 0;
+    const input4 = parseFloat(document.getElementById("r-materials-input4").value) || 0;
+
+    let total = input1 + input2 + input3 + input4;
+
+    document.getElementById("r-metrial_label").innerHTML = total;
+});
+
 
 
