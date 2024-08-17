@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section id="main">
+        <div class="Model-dropdown">
+            <button class="btn-model" name="btn">Model</button>
+            <div class="Model-dropdown-content">
+                <button id="model-dr-c1">2THD</button>
+                <button id="model-dr-c2">25/35</button>
+                <button id="model-dr-c3">40/60</button>
+                <button id="model-dr-c4">60/80</button>
+                <button id="model-dr-c5">Small PS</button>
+                <button id="model-dr-c6">Mid PS</button>
+                <button id="model-dr-c7">Large PS</button>
+                <button id="model-dr-c8">Small FKS</button>
+                <button id="model-dr-c9">Large FKS</button>
+                <button id="model-dr-c10">Small Lazer</button>
+                <button id="model-dr-c11">Large Lazer</button>
+                <button id="model-dr-c12">Titan</button>
+                <button id="model-dr-c13">Small Nep.</button>
+                <button id="model-dr-c14">Large Nep.</button>
+                <button id="model-dr-c15">Sq. FKS</button>
+                <button id="model-dr-c16">Big Truck</button>
+            </div>
+            <h1 class="number" id="h1">Model number 3</h1>
+        </div>
+        <div class="added-materials">
+            <div class="Model-dropdown">
+                <button class="btn-model" name="btn">Thickness</button>
+                <div class="Model-dropdown-content">
+                    <button id="Thick-dr-c1">0.3</button>
+                </div>
+                <h1 class="number-Thick" id="h1">Model number 3</h1>
+            </div>
+        </div>  
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
