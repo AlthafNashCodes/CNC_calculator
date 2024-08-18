@@ -4,13 +4,23 @@
     font-family: sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498DB;
+}
+
 #main{
     width: 50vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin: 20px;
+    z-index: 2;
+    background-color: whitesmoke;
 }
 .btn-model {
     background-color: #3498DB;
