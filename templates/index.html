@@ -43,9 +43,14 @@
             <hr>
             <div class="added-materials-div"> 
                 <input type="number" name="Weight" id="weight-input">
-                <label for="Weight">Weight</label>
                 <button class="btn-model" name="btn" id="weight-btn">Enter</button>
                 <h1 class="number-Thick" id="Weight">Thickness</h1>
+            </div>
+            <hr>
+            <div class="added-materials-div"> 
+                <input type="number" name="Weight" id="weight-input2">
+                <label for="Weight" id="Weight-label2">Weight</label>
+                <button class="btn-model" name="btn" id="weight-btn2">Enter</button>
             </div>
             <hr>
             <div class="added-materials-div">
@@ -89,7 +94,19 @@
             </div>
             <hr>
         </div>
-        <hr>        
+        <hr>
+        <div class="total">
+            <h1>Enter the number of months you have till the next new working year</h1>
+            <input type="number" name="Labour" id="month-input4">
+            <label for="Labour-input4" id="month_label">Reduced Labour</label>
+            <button class="btn-model" name="btn" id="month-btn">Enter</button>
+            <hr>
+            <label id="total-lab-metrial_label1">Saving per truck</label>
+            <label id="total-lab-metrial_label2">Saving per year</label>
+            <label id="total-lab-metrial_label3">monthly saving</label>
+            <label id="total-lab-metrial_label4">FYE</label>
+            <button class="btn-model" name="btn" id="total-btn">Enter</button>
+        </div>        
     </section>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
