@@ -1,108 +1,85 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CR Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section id="main">
-        <hr>
+        <!-- Model Dropdown Section -->
         <div class="Model-dropdown">
-            <button class="btn-model" name="btn">Model</button>
+            <button class="btn-model">Model</button>
             <div class="Model-dropdown-content">
-                <button id="model-dr-c1">2THD</button>
-                <button id="model-dr-c2">25/35</button>
-                <button id="model-dr-c3">40/60</button>
-                <button id="model-dr-c4">60/80</button>
-                <button id="model-dr-c5">Small PS</button>
-                <button id="model-dr-c6">Mid PS</button>
-                <button id="model-dr-c7">Large PS</button>
-                <button id="model-dr-c8">Small FKS</button>
-                <button id="model-dr-c9">Large FKS</button>
-                <button id="model-dr-c10">Small Lazer</button>
-                <button id="model-dr-c11">Large Lazer</button>
-                <button id="model-dr-c12">Titan</button>
-                <button id="model-dr-c13">Small Nep.</button>
-                <button id="model-dr-c14">Large Nep.</button>
-                <button id="model-dr-c15">Sq. FKS</button>
-                <button id="model-dr-c16">Big Truck</button>
+                <button>2THD</button>
+                <button>25/35</button>
+                <!-- Add more models as needed -->
             </div>
-            <h1 class="number" id="h1">Model number 3</h1>
+            <h1 class="number">Model 3</h1>
         </div>
-        <hr>
+
+        <!-- Thickness Dropdown Section -->
+        <div class="Model-dropdown2">
+            <button class="btn-model">Thickness</button>
+            <div class="Model-dropdown-content2">
+                <button>0.3</button>
+                <!-- Add more thickness options as needed -->
+            </div>
+            <h1 class="number-Thick">Thickness</h1>
+        </div>
+
+        <!-- Added Materials Section -->
         <div class="added-materials">
-            <hr>
-            <div class="Model-dropdown2">
-                <button class="btn-model" name="btn">Thickness</button>
-                <div class="Model-dropdown-content2">
-                    <button id="Thick-dr-c1">0.3</button>
-                </div>
-                <h1 class="number-Thick" id="h1">Thickness</h1>
+            <div>
+                <input type="number" placeholder="Weight">
+                <label>Weight</label>
+                <button class="btn-model">Enter</button>
             </div>
-            <hr>
-            <div class="added-materials-div"> 
-                <input type="number" name="Weight" id="weight-input2">
-                <label for="Weight" id="Weight-label2">Weight</label>
-                <button class="btn-model" name="btn" id="weight-btn2">Enter</button>
+            <div>
+                <input type="number" placeholder="Material 1">
+                <input type="number" placeholder="Material 2">
+                <label>Total Added Materials</label>
+                <button class="btn-model">Enter</button>
             </div>
-            <hr>
-            <div class="added-materials-div">
-                <input type="number" name="Added materials" id="materials-input1">
-                <input type="number" name="Added materials" id="materials-input2">
-                <input type="number" name="Added materials" id="materials-input3">
-                <input type="number" name="Added materials" id="materials-input4">
-                <label for="Added materials" id="metrial_label">Total Added materials</label>
-                <button class="btn-model" name="btn" id="materials-btn">Enter</button>
-            </div>
-            <hr>
-        </div>  
-        <hr>
-        <div class="Reduced-materials">
-            <hr>
-            <div class="Reduced-materials-div">
-                <input type="number" name="Reduced materials" id="r-materials-input1">
-                <input type="number" name="Reduced materials" id="r-materials-input2">
-                <input type="number" name="Reduced materials" id="r-materials-input3">
-                <input type="number" name="Reduced materials" id="r-materials-input4">
-                <label for="Reduced materials" id="r-metrial_label">Total Reduced materials</label>
-                <button class="btn-model" name="btn" id="r-materials-btn">Enter</button>
-            </div>
-            <hr>
-        </div>  
-        <hr>
-        <div class="Labour">
-            <hr>
-            <div class="Labour-div">
-                <div>
-                    <input type="number" name="Labour" id="Labouinput4">
-                    <label for="Labouinput4" id="lab-metrial_label">Added Labour</label>
-                    <button class="btn-model" name="btn" id="Add-labour-btn">Enter</button>
-                </div>
-                <hr>
-                <div>
-                    <input type="number" name="Labour" id="Labour-input4">
-                    <label for="Labour-input4" id="reduce-lab-metrial_label">Reduced Labour</label>
-                    <button class="btn-model" name="btn" id="Reduce-labour-btn">Enter</button>
-                </div>
-            </div>
-            <hr>
         </div>
-        <hr>
+
+        <!-- Reduced Materials Section -->
+        <div class="Reduced-materials">
+            <div>
+                <input type="number" placeholder="Material 1">
+                <input type="number" placeholder="Material 2">
+                <label>Total Reduced Materials</label>
+                <button class="btn-model">Enter</button>
+            </div>
+        </div>
+
+        <!-- Labour Section -->
+        <div class="Labour">
+            <div>
+                <input type="number" placeholder="Added Labour">
+                <label>Added Labour</label>
+                <button class="btn-model">Enter</button>
+            </div>
+            <div>
+                <input type="number" placeholder="Reduced Labour">
+                <label>Reduced Labour</label>
+                <button class="btn-model">Enter</button>
+            </div>
+        </div>
+
+        <!-- Total Section -->
         <div class="total">
-            <h1>Enter the number of months you have till the next new working year</h1>
-            <input type="number" name="Labour" id="month-input4">
-            <label for="Labour-input4" id="month_label">Reduced Labour</label>
-            <button class="btn-model" name="btn" id="month-btn">Enter</button>
-            <hr>
-            <label id="total-lab-metrial_label1">Saving per truck</label>
-            <label id="total-lab-metrial_label2">Saving per year</label>
-            <label id="total-lab-metrial_label3">monthly saving</label>
-            <label id="total-lab-metrial_label4">FYE</label>
-            <button class="btn-model" name="btn" id="total-btn">Enter</button>
-        </div>        
+            <h1>Months till next working year</h1>
+            <input type="number" placeholder="Months">
+            <label>Number of Months</label>
+            <button class="btn-model">Enter</button>
+            <label>Saving per Truck</label>
+            <label>Saving per Year</label>
+            <label>Monthly Saving</label>
+            <label>FYE</label>
+        </div>
     </section>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

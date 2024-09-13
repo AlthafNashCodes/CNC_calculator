@@ -1,169 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-size: small;
+    box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 14px;
 }
 
-body{
+body, html {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #3498DB;
 }
 
-#main{
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: whitesmoke;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
-    z-index: 2;
-    background-color: whitesmoke;
 }
 
-#main div{
-    margin: 20px;
+.Model-dropdown,
+.Model-dropdown2,
+.added-materials,
+.Reduced-materials,
+.Labour,
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
 .btn-model {
     background-color: #3498DB;
     color: white;
-    padding: 12px;
-    font-size: 12px;
+    padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
-.Model-dropdown{
-    width: 500px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: inline-block;
-}
-
-.Model-dropdown .number{
-    margin-top: 50px;
-    position: absolute;
-    top: -40px;
-    left: 150px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.Model-dropdown-content{
+.Model-dropdown-content,
+.Model-dropdown-content2 {
     display: none;
     position: absolute;
-    top: 50px;
-    background: #f1f1f1;
-    min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f1f1f1;
+    min-width: 100px;
     z-index: 1;
-}
-.Model-dropdown-content button{
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
+    border: 1px solid #ccc;
 }
 
-.Model-dropdown-content button:hover {background-color: #ddd}
-
-.Model-dropdown:hover .Model-dropdown-content {
-    display: block;
-}
-
-.Model-dropdown2 .number-Thick{
-    position: absolute;
-    top: 10px;
-    left: 150px;
-    font-weight: 700;
-}
-
-.Model-dropdown2{
-    width: 500px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    display: inline-block;
-}
-
-
-.Model-dropdown-content2{
-    display: none;
-    position: absolute;
-    background: #f1f1f1;
-    min-width: 90px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.Model-dropdown-content2 button{
-    color: black;
-    padding: 12px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.Model-dropdown-content2 button:hover {background-color: #ddd}
-
+.Model-dropdown:hover .Model-dropdown-content,
 .Model-dropdown2:hover .Model-dropdown-content2 {
     display: block;
 }
 
-input , label {
+input, label {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100%;
+    border: 0.5px solid #ccc;
+}
+
+#weight-input2, #materials-input1, #r-materials-input1, #Labouinput4, #month-input4 {
     width: 100px;
-    height: 50px;
 }
 
-#Weight{
-    position: absolute;
-    top: 520px;
-    left: 600px;
+.total h1 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
     font-weight: 700;
 }
 
-#Weight-label{
-    position: absolute;
-    top: 800px;
-    left: 600px;
-    font-weight: 700;
-}
-
-.added-materials{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.added-materials .added-materials-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-label{
-    font-weight: 700;
-}
-
-
-.Reduced-materials{
-    display: flex;
-    flex-direction: column;
-}
-
-.Reduced-materials .Reduced-materials-div{
-    display: flex;
-    flex-direction: column;
-}
-
-label{
-    font-weight: 700;
-}
-
-.total{
+#main > div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
