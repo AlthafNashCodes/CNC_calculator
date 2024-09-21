@@ -10,74 +10,67 @@
     <section id="main">
         <!-- Model Dropdown Section -->
         <div class="Model-dropdown">
-            <button class="btn-model">Model</button>
-            <div class="Model-dropdown-content">
-                <button>2THD</button>
-                <button>25/35</button>
-                <!-- Add more models as needed -->
-            </div>
+            <button id="model-dr-c1" class="btn-model">2THD</button>
+            <button id="model-dr-c2" class="btn-model">25/35</button>
             <h1 class="number">Model 3</h1>
         </div>
 
         <!-- Thickness Dropdown Section -->
         <div class="Model-dropdown2">
-            <button class="btn-model">Thickness</button>
-            <div class="Model-dropdown-content2">
-                <button>0.3</button>
-                <!-- Add more thickness options as needed -->
-            </div>
+            <button id="Thick-dr-c1" class="btn-model">0.3</button>
             <h1 class="number-Thick">Thickness</h1>
         </div>
 
         <!-- Added Materials Section -->
         <div class="added-materials">
             <div>
-                <input type="number" placeholder="Weight">
-                <label>Weight</label>
-                <button class="btn-model">Enter</button>
+                <input id="weight-input2" type="number" placeholder="Weight">
+                <label id="Weight-label2">Weight</label>
+                <button id="weight-btn2" class="btn-model">Enter</button>
             </div>
             <div>
-                <input type="number" placeholder="Material 1">
-                <input type="number" placeholder="Material 2">
-                <label>Total Added Materials</label>
-                <button class="btn-model">Enter</button>
+                <input id="materials-input1" type="number" placeholder="Material 1">
+                <input id="materials-input2" type="number" placeholder="Material 2">
+                <label id="metrial_label">Total Added Materials</label>
+                <button id="materials-btn" class="btn-model">Enter</button>
             </div>
         </div>
 
         <!-- Reduced Materials Section -->
         <div class="Reduced-materials">
             <div>
-                <input type="number" placeholder="Material 1">
-                <input type="number" placeholder="Material 2">
-                <label>Total Reduced Materials</label>
-                <button class="btn-model">Enter</button>
+                <input id="r-materials-input1" type="number" placeholder="Material 1">
+                <input id="r-materials-input2" type="number" placeholder="Material 2">
+                <label id="r-metrial_label">Total Reduced Materials</label>
+                <button id="r-materials-btn" class="btn-model">Enter</button>
             </div>
         </div>
 
         <!-- Labour Section -->
         <div class="Labour">
             <div>
-                <input type="number" placeholder="Added Labour">
-                <label>Added Labour</label>
-                <button class="btn-model">Enter</button>
+                <input id="Labouinput4" type="number" placeholder="Added Labour">
+                <label id="lab-metrial_label">Added Labour</label>
+                <button id="Add-labour-btn" class="btn-model">Enter</button>
             </div>
             <div>
-                <input type="number" placeholder="Reduced Labour">
-                <label>Reduced Labour</label>
-                <button class="btn-model">Enter</button>
+                <input id="Labour-input4" type="number" placeholder="Reduced Labour">
+                <label id="reduce-lab-metrial_label">Reduced Labour</label>
+                <button id="Reduce-labour-btn" class="btn-model">Enter</button>
             </div>
         </div>
 
         <!-- Total Section -->
         <div class="total">
             <h1>Months till next working year</h1>
-            <input type="number" placeholder="Months">
-            <label>Number of Months</label>
-            <button class="btn-model">Enter</button>
+            <input id="month-input4" type="number" placeholder="Months">
+            <label id="month_label">Number of Months</label>
+            <button id="month-btn" class="btn-model">Enter</button>
             <label>Saving per Truck</label>
-            <label>Saving per Year</label>
-            <label>Monthly Saving</label>
-            <label>FYE</label>
+            <label id="total-lab-metrial_label1">Saving per Year</label>
+            <label id="total-lab-metrial_label2">Monthly Saving</label>
+            <label id="total-lab-metrial_label3">FYE</label>
+            <button id="total-btn" class="btn-model">Calculate Total</button>
         </div>
     </section>
     <script src="script.js"></script>
